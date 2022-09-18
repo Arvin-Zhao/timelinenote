@@ -10,14 +10,27 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:timelinenote.helloWorld"
+    "onLanguage:tn",
+    "onCommand:extension.timelinenote"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "tn",
+        "extensions": [
+          ".tn"
+        ],
+        "aliases": [
+          "TN",
+          "tn"
+        ]
+      }
+    ],
     "commands": [
       {
-        "command": "timelinenote.helloWorld",
-        "title": "Hello World"
+        "command": "extension.timelinenote",
+        "title": "Time Line Note"
       }
     ]
   },
