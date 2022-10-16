@@ -1,9 +1,3 @@
-out
-dist
-node_modules
-.vscode-test/
-*.vsix
-
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
